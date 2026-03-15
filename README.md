@@ -9,16 +9,16 @@ To implement a Support Vector Machine (SVM) model to classify food items and opt
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1. Data Preparation and Splitting The dataset is loaded from food_items_binary.csv. Nutritional features such as calories, fats, sugars, fiber, and protein are chosen as predictors, while the class column is the target. The data is split into training and testing sets (80/20 split). Standardization is applied using StandardScaler so that all features are on the same scale, which is important for algorithms like SVM.
+2. Model Selection with Grid Search A Support Vector Machine (SVC) classifier is used. To find the best hyperparameters, GridSearchCV is applied with a parameter grid that includes different values for C, kernel types (linear, rbf), and gamma settings (scale, auto). Cross‑validation ensures the model is tested on multiple folds of the training data to identify the most accurate configuration
+3. Training and Evaluation The best model found by grid search is trained on the scaled training data. Predictions are made on the test set. The model’s performance is measured using accuracy, a classification report (precision, recall, F1‑score), and a confusion matrix to show how well the model distinguishes between the two classes.
+4. Training and Evaluation The best model found by grid search is trained on the scaled training data. Predictions are made on the test set. The model’s performance is measured using accuracy, a classification report (precision, recall, F1‑score), and a confusion matrix to show how well the model distinguishes between the two classes.
 
 ## Program:
 ```py
 /*
 Program to implement SVM for food classification for diabetic patients.
-Developed by: 
+Developed by: Madhan M
 RegisterNumber:
 */
 
